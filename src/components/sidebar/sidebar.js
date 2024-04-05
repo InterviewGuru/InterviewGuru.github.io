@@ -46,6 +46,16 @@ export default function Sidebar() {
         <li>
           <Link to="/MongoDB">MongoDB <span>(5)</span></Link>
         </li>
+        <li>Cloud</li>
+        <li>
+          <Link to="/Azure">Azure <span>(5)</span></Link>
+        </li>
+        <li>
+          <Link to="/AWS">AWS <span>(5)</span></Link>
+        </li>
+        <li>
+          <Link to="/Google-cloud">Google Cloud <span>(5)</span></Link>
+        </li>
       </ul>
     </div>
   );
