@@ -1,55 +1,80 @@
 {
-    "questions": [
-      {
-        "difficulty": "easy",
-        "question": "What is React?",
-        "answer": "React is a JavaScript library for building user interfaces, developed by Facebook. It allows developers to create reusable UI components."
-      },
-      {
-        "difficulty": "easy",
-        "question": "What are the key features of React?",
-        "answer": "Virtual DOM, JSX (JavaScript XML) syntax, Components, One-way data flow, and the use of libraries like Redux for state management."
-      },
-      {
-        "difficulty": "easy",
-        "question": "What is JSX?",
-        "answer": "JSX (JavaScript XML) is a syntax extension for JavaScript that allows mixing HTML with JavaScript code. It allows developers to write HTML-like code within their JavaScript files."
-      },
-      {
-        "difficulty": "easy",
-        "question": "What are React components?",
-        "answer": "React components are the building blocks of React applications. They are reusable and encapsulate both the UI and the logic required to render that UI."
-      },
-      {
-        "difficulty": "easy",
-        "question": "What is the difference between functional components and class components in React?",
-        "answer": "Functional components are simple JavaScript functions that return JSX elements. They are typically used for presentational components. Class components are ES6 classes that extend from React.Component and can hold state and have access to lifecycle methods."
-      },
-      {
-        "difficulty": "medium",
-        "question": "What is state in React?",
-        "answer": "State is an object that represents the parts of a component that can change over time. It's managed internally by the component and can be updated using the setState() method."
-      },
-      {
-        "difficulty": "medium",
-        "question": "What are props in React?",
-        "answer": "Props (short for properties) are parameters that are passed into React components. They allow data to be passed from a parent component to a child component."
-      },
-      {
-        "difficulty": "medium",
-        "question": "What is the Virtual DOM in React?",
-        "answer": "The Virtual DOM is a lightweight representation of the actual DOM in memory. React uses it to perform efficient updates to the actual DOM by minimizing the number of DOM manipulations."
-      },
-      {
-        "difficulty": "medium",
-        "question": "What are React lifecycle methods?",
-        "answer": "React lifecycle methods are special methods that are called at various stages of a component's life. They include methods like componentDidMount, componentDidUpdate, and componentWillUnmount."
-      },
-      {
-        "difficulty": "hard",
-        "question": "What is the significance of keys in React lists?",
-        "answer": "Keys are special attributes used by React to identify which items have changed, been added, or been removed from a list. They help React efficiently update the UI when lists are modified."
-      }
-    ]
-  }
-  
+  "title": "React Interview Questions and Answers",
+  "questions": [
+    {
+      "difficulty": "easy",
+      "question": "What is React?",
+      "answer": "React is a JavaScript library for building user interfaces, developed by Facebook. It allows developers to create reusable UI components."
+    },
+    {
+      "difficulty": "easy",
+      "question": "What are the key features of React?",
+      "answer": "Virtual DOM, JSX (JavaScript XML) syntax, Components, One-way data flow, and the use of libraries like Redux for state management."
+    },
+    {
+      "difficulty": "medium",
+      "question": "What is the difference between props and state in React?",
+      "answer": "Props (short for properties) are parameters that are passed into React components. They allow data to be passed from a parent component to a child component. State is an object that represents the parts of a component that can change over time. It's managed internally by the component and can be updated using the setState() method."
+    },
+    {
+      "difficulty": "medium",
+      "question": "What are React Hooks?",
+      "answer": "React Hooks are functions that let you use state and other React features without writing a class component. They allow you to reuse stateful logic across multiple components."
+    },
+    {
+      "difficulty": "hard",
+      "question": "What is the significance of useEffect() in React?",
+      "answer": "useEffect() is a built-in React Hook that allows you to perform side effects in function components. It's similar to componentDidMount, componentDidUpdate, and componentWillUnmount lifecycle methods combined in class components."
+    },
+    {
+      "difficulty": "hard",
+      "question": "What is React Router?",
+      "answer": "React Router is a popular routing library for React applications. It allows you to declare routes in your application and handle navigation between different components."
+    },
+    {
+      "difficulty": "easy",
+      "question": "What is JSX?",
+      "answer": "JSX (JavaScript XML) is a syntax extension for JavaScript that allows mixing HTML with JavaScript code. It allows developers to write HTML-like code within their JavaScript files."
+    },
+    {
+      "difficulty": "easy",
+      "question": "What are React components?",
+      "answer": "React components are the building blocks of React applications. They are reusable and encapsulate both the UI and the logic required to render that UI."
+    },
+    {
+      "difficulty": "medium",
+      "question": "What is Redux?",
+      "answer": "Redux is a predictable state container for JavaScript apps. It helps you manage the state of your application in a predictable way and makes it easier to debug and test your code."
+    },
+    {
+      "difficulty": "medium",
+      "question": "What are controlled components in React?",
+      "answer": "Controlled components are React components that are controlled by React state. They receive their current value through props and notify changes through callbacks like onChange."
+    },
+    {
+      "difficulty": "hard",
+      "question": "What are higher-order components (HOC) in React?",
+      "answer": "Higher-order components are functions that take a component and return a new component with additional functionality. They allow you to reuse code, share state, and manipulate the rendering of components."
+    },
+    {
+      "difficulty": "hard",
+      "question": "What is the purpose of key prop in React lists?",
+      "answer": "The key prop is a special attribute used by React to identify which items have changed, been added, or been removed from a list. It helps React efficiently update the UI when lists are modified."
+    },
+    {
+      "difficulty": "easy",
+      "question": "What is the Virtual DOM in React?",
+      "answer": "The Virtual DOM is a lightweight representation of the actual DOM in memory. React uses it to perform efficient updates to the actual DOM by minimizing the number of DOM manipulations."
+    },
+    {
+      "difficulty": "easy",
+      "question": "What is the purpose of ReactDOM.render() method in React?",
+      "answer": "ReactDOM.render() is a method used to render React elements into the DOM. It takes two arguments: a React element and a DOM container where the element will be rendered."
+    },
+    {
+      "difficulty": "medium",
+      "question": "What is the Context API in React?",
+      "answer": "The Context API is a way to pass data through the component tree without having to pass props down manually at every level. It provides a way to share values like themes, user authentication, or preferred language across the entire application."
+    }
+  ]
+}

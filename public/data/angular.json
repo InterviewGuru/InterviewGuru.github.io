@@ -1,0 +1,81 @@
+{
+    "title": "Angular Interview Questions and Answers",
+    "questions": [
+      {
+        "difficulty": "easy",
+        "question": "What is Angular?",
+        "answer": "Angular is a TypeScript-based open-source front-end web application platform led by the Angular Team at Google and by a community of individuals and corporations."
+      },
+      {
+        "difficulty": "easy",
+        "question": "What are the key features of Angular?",
+        "answer": "Some key features of Angular include two-way data binding, dependency injection, modular architecture with NgModule, built-in directives like ngFor and ngIf, and TypeScript support."
+      },
+      {
+        "difficulty": "medium",
+        "question": "What is Angular CLI?",
+        "answer": "Angular CLI (Command Line Interface) is a command-line tool for initializing, developing, scaffolding, and maintaining Angular applications. It provides commands for generating components, services, modules, and more."
+      },
+      {
+        "difficulty": "medium",
+        "question": "What is Angular Ivy?",
+        "answer": "Angular Ivy is the latest rendering engine in Angular. It is designed to improve bundle size, build times, and runtime performance. Ivy introduces features like tree-shakable components and improved type checking."
+      },
+      {
+        "difficulty": "hard",
+        "question": "What is NgRx?",
+        "answer": "NgRx is a state management library for Angular applications. It is inspired by Redux and provides a reactive state management solution using RxJS observables."
+      },
+      {
+        "difficulty": "hard",
+        "question": "What is Angular Universal?",
+        "answer": "Angular Universal is a technology that allows you to run your Angular applications on the server-side. It helps improve SEO, performance, and user experience by pre-rendering Angular applications on the server."
+      },
+      {
+        "difficulty": "easy",
+        "question": "What is NgModule in Angular?",
+        "answer": "NgModule (Angular Module) is a class decorated with @NgModule decorator that defines a module in Angular. It's used to group components, directives, pipes, and services that are related and can be compiled together."
+      },
+      {
+        "difficulty": "easy",
+        "question": "What is Angular Template Syntax?",
+        "answer": "Angular Template Syntax is a special syntax used in Angular templates to bind data, display dynamic content, and respond to user events. It includes features like interpolation, property binding, event binding, and structural directives."
+      },
+      {
+        "difficulty": "medium",
+        "question": "What is Angular Dependency Injection?",
+        "answer": "Angular Dependency Injection is a design pattern used to inject dependencies into a class or component. It helps manage dependencies, improve modularity, and facilitate testing."
+      },
+      {
+        "difficulty": "medium",
+        "question": "What are Angular Directives?",
+        "answer": "Angular Directives are markers on a DOM element that tell Angular to do something to that element or its children. They include built-in directives like ngIf, ngFor, and ngModel, as well as custom directives created by developers."
+      },
+      {
+        "difficulty": "hard",
+        "question": "What is Angular Router?",
+        "answer": "Angular Router is a powerful routing library for Angular applications. It allows you to define navigation paths, load components lazily, handle URL parameters, and more."
+      },
+      {
+        "difficulty": "hard",
+        "question": "What is Angular Change Detection?",
+        "answer": "Angular Change Detection is the mechanism by which Angular keeps the DOM in sync with the application data. It detects changes in application state and updates the view accordingly."
+      },
+      {
+        "difficulty": "easy",
+        "question": "What is Angular CLI command to generate a new component?",
+        "answer": "To generate a new component in Angular CLI, you can use the command: ng generate component <component-name> or its shorthand ng g c <component-name>."
+      },
+      {
+        "difficulty": "easy",
+        "question": "What is the purpose of NgModule imports array in Angular?",
+        "answer": "The imports array in NgModule is used to import other Angular modules that are needed by the components declared in the current module. It allows you to reuse code and organize your application into feature modules."
+      },
+      {
+        "difficulty": "medium",
+        "question": "What are Angular Pipes?",
+        "answer": "Angular Pipes are a way to transform data in Angular templates. They take in data as input and return transformed data as output. Angular provides built-in pipes like DatePipe, UpperCasePipe, and CurrencyPipe, as well as the ability to create custom pipes."
+      }
+    ]
+  }
+  
