@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 export default function Sidebar() {
   return (
     <div>
-      <div className="logo"> <img alt="logo" src="../images/logo/interview-guru-logo.png"></img> </div>
+      <div className="logo"> <img alt="logo" src="../images/logo/tech-school.png"></img> </div>
       <ul>
         <li className="link-header">Front-End Interview</li>
         <li>
@@ -29,7 +29,7 @@ export default function Sidebar() {
         </li>
         <li>
           <Link to="/React">
-            React <span>(5)</span>
+            React <span>(9)</span>
           </Link>
         </li>
         <li>

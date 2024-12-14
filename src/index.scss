@@ -80,6 +80,30 @@ body {
         }
     }
 
+    .c-accordion {
+        details {
+            background-color: #ffffff;
+            border-radius: 5px;
+        }
+        summary {
+            font-size: 18px;
+            font-weight: 600;
+            padding: 10px;
+            background-color: #ffffff;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-bottom: 10px;
+        }
+        .answer {
+            ul 
+            {
+                li {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+
     .accordion-item {
 
         margin-bottom: 10px;

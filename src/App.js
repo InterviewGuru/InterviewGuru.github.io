@@ -5,6 +5,7 @@ import { HashRouter, Routes, Route } from "react-router-dom";
 import JavascriptQA from "./components/js/javascript-qa";
 import ReactInterviewQuestions from "./components/react/react";
 import AngularInterviewQuestions from "./components/angular/angular-component";
+import FilterableAccordion from "./components/js/javascript-qa";
 
 function App() {
   return (
@@ -17,7 +18,7 @@ function App() {
           <div className="col-8">
             <Routes>
               <Route path="/" element={<Home />} />
-              <Route path="/Javascript" element={<JavascriptQA />} />
+              <Route path="/Javascript" element={<FilterableAccordion />} />
               <Route path="/Angular" element={<AngularInterviewQuestions />} />
               <Route path="/React" element={<ReactInterviewQuestions />} />
             </Routes>
@@ -38,7 +39,7 @@ function App() {
               </div>
           </div>
           <div className="row">
-          <div className="footer">© 2024 Interview Guru</div>
+          <div className="footer">©techschool.in 2025</div>
           </div>
         </div>
        
