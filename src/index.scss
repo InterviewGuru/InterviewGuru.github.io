@@ -2,9 +2,17 @@
 body { 
     background-color: #f6f6f6 !important;
 }
+
+#toggle-btn {
+    display: none;
+}
+
+.main {
+    min-height: 100vh;
+}
+  
 .sidebar-wrapper {
     background-color: #fff;
-    height: 100vh;
 
     .logo {
         text-align: center;
@@ -23,10 +31,12 @@ body {
 
         li {
             &.link-header {
-                background-color: #f4f4f4;
+                background-color: #133f6e;
                 font-weight: bold;
                 padding: 10px 10px;
                 border-radius: 5px;
+                text-transform: uppercase;
+                color: #fff;
 
             }
 
@@ -36,10 +46,14 @@ body {
                 color: #000;
                 display: block;
                 border-radius: 10px;
+                font-size: 16px;
+                font-weight: 500;
+                text-transform: capitalize;
+                margin: 2.5px 0px;
             }
 
             a:hover {
-                background-color: #c2e7ff;
+                background-color: #d7d7d7;
             }
         }
     }
@@ -55,22 +69,19 @@ body {
         margin: 10px 0px;
         border-radius: 5px;
         text-align: center;
-
-        h1 {
-            font-size: 24px;
-        }
+        font-size: 40px;
     }
 
     .filter-questions {
         font-weight: bold;
-        padding: 10px;
+        padding: 5px;
         background-color: #fff;
         margin: 10px 0px;
         border-radius: 5px;
         label {
             display: inline-block;
             padding: 10px;
-            font-size: 18px;
+            font-size: 16px;
             cursor: pointer;
             font-weight: 600;
             input {
@@ -86,7 +97,7 @@ body {
             border-radius: 5px;
         }
         summary {
-            font-size: 18px;
+            font-size: 16px;
             font-weight: 600;
             padding: 10px;
             background-color: #ffffff;
@@ -98,7 +109,7 @@ body {
             ul 
             {
                 li {
-                    font-size: 20px;
+                    font-size: 16px;
                 }
             }
         }
@@ -181,4 +192,68 @@ body {
         border-width: 80%;
         padding: 15px;
     }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+
+
+    #toggle-btn {
+        display: block;
+        position: absolute;
+        top: 17px;
+        font-weight: bold;
+        font-size: 18px;
+    }
+    .sidebar-wrapper { 
+        width: 100% !important;
+        .logo img {
+            width: 200px;
+            height: 35px;
+        }
+        ul li.link-header {
+            border-radius: 0px;
+        }
+    }
+
+    #sidebar {
+        height: 98vh;
+        position: absolute;
+        background: #eceff0;
+        color: #000;
+        z-index: 1;
+        top: 60px;
+        left: -500px;
+        transition: left 0.5s ease-in-out;
+        width: 62%;
+        font-size: 13px;
+        border-radius: 0px 5px 5px 0px;
+      }
+      
+      #sidebar.open {
+        left: 0;
+      }
+
+      .main-content {
+        width: 100% !important;
+
+        .main-content-wrapper  {
+
+            .main-header-title {
+                font-size: 14px;
+            }
+
+            .filter-questions {
+                label {
+                    font-size: 12px;
+                    padding: 5px;;
+                }
+            }
+        }
+    }
+
+    .footer-top-section {
+        width: 100% !important
+    }
+
 }

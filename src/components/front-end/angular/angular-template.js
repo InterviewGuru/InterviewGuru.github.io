@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { vscDarkPlus } from 'react-syntax-highlighter/dist/esm/styles/prism'; // VS Code dark theme
-import { questionsData } from './questionsData';
+import { questionsData } from './data';
 
-const FilterableAccordion = () => {
+const AngularTemplate = () => {
   const { Title, List } = questionsData;
   const [selectedDifficulty, setSelectedDifficulty] = useState([]);
   const [selectedCategory, setSelectedCategory] = useState([]);
@@ -27,11 +27,11 @@ const FilterableAccordion = () => {
   ));
 
   return (
-    <div className='main-content-wrapper' style={{ padding: '20px' }}>
+    <div className='main-content-wrapper'>
       <h1 className='main-header-title'>{Title } </h1>
       <div className='filter-questions'>
         {['Easy', 'Medium', 'Hard'].map(difficulty => (
-          <label key={difficulty} style={{ marginRight: '15px' }}>
+          <label key={difficulty} >
             <input
               type="checkbox"
               value={difficulty}
@@ -44,7 +44,7 @@ const FilterableAccordion = () => {
       </div>
       <div className='filter-questions'>
         {categoryList.map(category => (
-          <label key={category} style={{ marginRight: '15px' }}>
+          <label key={category} >
             <input
               type="checkbox"
               value={category}
@@ -82,4 +82,4 @@ const FilterableAccordion = () => {
   );
 };
 
-export default FilterableAccordion;
+export default AngularTemplate;
