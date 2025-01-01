@@ -1,9 +1,11 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import React, { useContext, useState } from "react";
+import { Link, NavLink } from "react-router-dom";
+import { AppContext } from "../shared/contexts/AppProvider";
 
 
 export default function Sidebar() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+  const { totalQuestions, setTotalQuestions } = useContext(AppContext);
 
   const handleToggle = () => {
     setIsSidebarOpen(!isSidebarOpen);
@@ -12,94 +14,179 @@ export default function Sidebar() {
   return (
     <div>
       <div className="logo">
-        <div className="logo-text"> &lt;tech-school/&gt;</div>
-        <div className="hide-in-mobile"> <img alt="logo" src="../images/logo/tech-school.png"></img></div>
+          <NavLink to="/">
+            <div className="logo-wrapper">
+              <div className="logo-tech"> <i className="bi bi-laptop"></i> TECH</div>
+              <div className="logo-school">SCHOOL</div>
+            </div></NavLink>
       </div>
       <div id="toggle-btn" onClick={handleToggle}>
-        <i class="bi bi-list"></i> Menu
+        <i className="bi bi-list"></i> Menu
       </div>
       <div
         id="sidebar"
         className={isSidebarOpen ? 'sidebar open' : 'sidebar'}
       >
         <ul>
-          <li className="link-header">Front-End Interview</li>
+          <li className="link-header">Front-End</li>
           <li onClick={handleToggle}>
-            <Link to="/javascript-interview-questions-and-answers">
-              Javascript <span>(5)</span>
-            </Link>
+            <NavLink to="/javascript-interview-questions-and-answers">
+              Javascript <span>({totalQuestions.javascript})</span>
+            </NavLink>
           </li>
           <li onClick={handleToggle}>
-            <Link to="/html-interview-questions-and-answers">
-              HTML <span>(5)</span>
-            </Link>
+            <NavLink to="/html-interview-questions-and-answers">
+              HTML <span>({totalQuestions.html})</span>
+            </NavLink>
           </li>
           <li onClick={handleToggle}>
-            <Link to="/css-interview-questions-and-answers">
-              CSS <span>(5)</span>
-            </Link>
+            <NavLink to="/css-interview-questions-and-answers">
+              CSS <span>({totalQuestions.css})</span>
+            </NavLink>
           </li>
           <li onClick={handleToggle}>
-            <Link to="/angular-interview-questions-and-answers">
-              Angular <span>(5)</span>
-            </Link>
+            <NavLink to="/angular-interview-questions-and-answers">
+              Angular <span>({totalQuestions.angular})</span>
+            </NavLink>
           </li>
           <li onClick={handleToggle}>
-            <Link to="/react-interview-questions-and-answers">
-              React <span>(9)</span>
-            </Link>
+            <NavLink to="/react-interview-questions-and-answers">
+              React <span>({totalQuestions.react})</span>
+            </NavLink>
           </li>
           <li onClick={handleToggle}>
-            <Link to="/vuejs-interview-questions-and-answers">
-              Vue JS <span>(5)</span>
-            </Link>
+            <NavLink to="/vuejs-interview-questions-and-answers">
+              Vue JS <span>({totalQuestions.vuejs})</span>
+            </NavLink>
           </li>
           <li onClick={handleToggle}>
-            <Link to="/flutter-interview-questions-and-answers">
-              Flutter <span>(5)</span>
-            </Link>
+            <NavLink to="/flutter-interview-questions-and-answers">
+              Flutter <span>({totalQuestions.flutter})</span>
+            </NavLink>
           </li>
           <li onClick={handleToggle}>
-            <Link to="/react-native-interview-questions-and-answers">
-              React Native <span>(5)</span>
-            </Link>
+            <NavLink to="/react-native-interview-questions-and-answers">
+              React Native <span>({totalQuestions.reactNative})</span>
+            </NavLink>
           </li>
           <li onClick={handleToggle}>
-            <Link to="/ionic-interview-questions-and-answers">
-              Ionic <span>(5)</span>
-            </Link>
+            <NavLink to="/ionic-interview-questions-and-answers">
+              Ionic <span>({totalQuestions.ionic})</span>
+            </NavLink>
           </li>
           <li className="link-header">BackEnd</li>
           <li onClick={handleToggle}>
-            <Link to="/Node">
+            <NavLink to="/csharp-interview-questions-and-answers">
+              C # <span>(5)</span>
+            </NavLink>
+          </li>
+          <li onClick={handleToggle}>
+            <NavLink to="/dotnetcore-interview-questions-and-answers">
+              .NET Core <span>(5)</span>
+            </NavLink>
+          </li>
+          <li onClick={handleToggle}>
+            <NavLink to="/node-interview-questions-and-answers">
               Node <span>(5)</span>
-            </Link>
+            </NavLink>
           </li>
           <li onClick={handleToggle}>
-            <Link to="/Express">
+            <NavLink to="/express-interview-questions-and-answers">
               Express <span>(5)</span>
-            </Link>
+            </NavLink>
           </li>
           <li onClick={handleToggle}>
-            <Link to="/MongoDB">
-              MongoDB <span>(5)</span>
-            </Link>
+            <NavLink to="/java-interview-questions-and-answers">
+              Java <span>(5)</span>
+            </NavLink>
+          </li>
+          <li onClick={handleToggle}>
+            <NavLink to="/spring-boot-interview-questions-and-answers">
+              Spring-boot <span>(5)</span>
+            </NavLink>
           </li>
           <li className="link-header">Cloud</li>
           <li onClick={handleToggle}>
-            <Link to="/Azure">
+            <NavLink to="/Azure">
               Azure <span>(5)</span>
-            </Link>
+            </NavLink>
           </li>
           <li onClick={handleToggle}>
-            <Link to="/AWS">
+            <NavLink to="/AWS">
               AWS <span>(5)</span>
-            </Link>
+            </NavLink>
           </li>
           <li onClick={handleToggle}>
-            <Link to="/Google-cloud">
+            <NavLink to="/Google-cloud">
               Google Cloud <span>(5)</span>
-            </Link>
+            </NavLink>
+          </li>
+          <li className="link-header">Database</li>
+          <li onClick={handleToggle}>
+            <NavLink to="/Azure">
+              MySQL <span>(5)</span>
+            </NavLink>
+          </li>
+          <li onClick={handleToggle}>
+            <NavLink to="/AWS">
+            PostgreSQL <span>(5)</span>
+            </NavLink>
+          </li>
+          <li onClick={handleToggle}>
+            <NavLink to="/Google-cloud">
+            Oracle  <span>(5)</span>
+            </NavLink>
+          </li>
+          <li onClick={handleToggle}>
+            <NavLink to="/Google-cloud">
+            MongoDB  <span>(5)</span>
+            </NavLink>
+          </li>
+          <li onClick={handleToggle}>
+            <NavLink to="/Google-cloud">
+            Cassandra  <span>(5)</span>
+            </NavLink>
+          </li>
+          <li onClick={handleToggle}>
+            <NavLink to="/Google-cloud">
+            DynamoDB  <span>(5)</span>
+            </NavLink>
+          </li>
+          <li onClick={handleToggle}>
+            <NavLink to="/Google-cloud">
+            ConsmosDB  <span>(5)</span>
+            </NavLink>
+          </li>
+          <li className="link-header">System Design and Architecture</li>
+          <li onClick={handleToggle}>
+            <NavLink to="/Azure">
+            System Design Interview Questions <span>(5)</span>
+            </NavLink>
+          </li>
+          <li onClick={handleToggle}>
+            <NavLink to="/AWS">
+            Design Patterns Interview Questions <span>(5)</span>
+            </NavLink>
+          </li>
+          <li onClick={handleToggle}>
+            <NavLink to="/Google-cloud">
+            Microservices Interview Questions <span>(5)</span>
+            </NavLink>
+          </li>
+          <li onClick={handleToggle}>
+            <NavLink to="/Google-cloud">
+            REST API Interview Questions <span>(5)</span>
+            </NavLink>
+          </li>
+          <li onClick={handleToggle}>
+            <NavLink to="/Google-cloud">
+            CQRS Interview Questions <span>(5)</span>
+            </NavLink>
+          </li>
+          <li onClick={handleToggle}>
+            <NavLink to="/Google-cloud">
+            Event Sourcing Interview Questions <span>(5)</span>
+            </NavLink>
           </li>
         </ul>
       </div>

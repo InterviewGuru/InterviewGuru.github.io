@@ -11,6 +11,7 @@ import AngularTemplate from "./components/front-end/angular/angular-template";
 import ReactNativeTemplate from "./components/front-end/react-native/react-native-template";
 import FlutterTemplate from "./components/front-end/flutter/flutter-template";
 import VueJsTemplate from "./components/front-end/vuejs/vuejs-template";
+import CSharpTemplate from "./components/back-end/csharp/csharp-template";
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
               <Route path="/flutter-interview-questions-and-answers" element={<FlutterTemplate />} />
               <Route path="/react-native-interview-questions-and-answers" element={<ReactNativeTemplate />} />
               <Route path="/ionic-interview-questions-and-answers" element={<IonicTemplate />} />
+              <Route path="/csharp-interview-questions-and-answers" element={<CSharpTemplate />} />
             </Routes>
           </div>
         </div>

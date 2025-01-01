@@ -464,11 +464,11 @@ export const questionsData = {
         "Category": "Styling",
         "Question": "What are different ways to add CSS in your app?",
         "Answer": [
-          "1. **Inline Styles:** Directly in JSX using style attribute.",
-          "2. **CSS Modules:** For scoped CSS.",
-          "3. **Styled-components:** CSS-in-JS where CSS is written using JavaScript.",
-          "4. **CSS-in-JS Libraries:** Like Emotion.",
-          "5. **Global CSS:** Traditional stylesheet linked in index.html or imported in React."
+          "1. Inline Styles: Directly in JSX using style attribute.",
+          "2. CSS Modules: For scoped CSS.",
+          "3. Styled-components: CSS-in-JS where CSS is written using JavaScript.",
+          "4. CSS-in-JS Libraries: Like Emotion.",
+          "5. Global CSS: Traditional stylesheet linked in index.html or imported in React."
         ],
         "Code": [
           "// Inline Style",
@@ -504,9 +504,9 @@ export const questionsData = {
         "Question": "What is the use of Parcel, Vite, Webpack?",
         "Answer": [
           "These tools are module bundlers and build systems:",
-          "- **Webpack:** Manages module dependencies, bundles files, optimizes for production.",
-          "- **Parcel:** Zero configuration bundler, fast out-of-the-box experience.",
-          "- **Vite:** Fast build tool with native ES modules, excellent for development with HMR."
+          "Webpack: Manages module dependencies, bundles files, optimizes for production.",
+          "Parcel: Zero configuration bundler, fast out-of-the-box experience.",
+          "Vite: Fast build tool with native ES modules, excellent for development with HMR."
         ],
         "Code": [
           "// Example of Vite configuration",
@@ -550,8 +550,8 @@ export const questionsData = {
         "Category": "Package Management",
         "Question": "Difference between dependency and devDependency",
         "Answer": [
-          "- **Dependencies:** These are modules required for the application to run.",
-          "- **DevDependencies:** These are modules used only for development, like testing tools or build tools."
+          "Dependencies: These are modules required for the application to run.",
+          "DevDependencies: These are modules used only for development, like testing tools or build tools."
         ],
         "Code": [
           "// In package.json",
@@ -568,8 +568,8 @@ export const questionsData = {
         "Category": "Package Management",
         "Question": "What is npx and npm?",
         "Answer": [
-          "- **npm:** Node Package Manager, used to install, publish, and manage packages.",
-          "- **npx:** Comes with npm, allows running of package binaries without installing them globally."
+          "npm: Node Package Manager, used to install, publish, and manage packages.",
+          "npx: Comes with npm, allows running of package binaries without installing them globally."
         ],
         "Code": [
           "// Using npm to install a package",
@@ -583,8 +583,8 @@ export const questionsData = {
         "Category": "Package Management",
         "Question": "Difference between package.json and package-lock.json",
         "Answer": [
-          "- **package.json:** Contains project metadata, scripts, and dependencies.",
-          "- **package-lock.json:** Locks the versions of dependencies, ensuring consistent installs across different environments."
+          "package.json: Contains project metadata, scripts, and dependencies.",
+          "package-lock.json: Locks the versions of dependencies, ensuring consistent installs across different environments."
         ],
         "Code": [
           "// Example from package.json",
@@ -603,8 +603,8 @@ export const questionsData = {
         "Category": "Debugging",
         "Question": "Difference between console.log(<HeaderComponent/>) and console.log(HeaderComponent());",
         "Answer": [
-          "- **console.log(<HeaderComponent/>)**: Logs the JSX element, which can be seen as an object representing the component.",
-          "- **console.log(HeaderComponent())**: Executes the component, returning its rendered result if not within a React environment."
+          "console.log(<HeaderComponent/>): Logs the JSX element, which can be seen as an object representing the component.",
+          "console.log(HeaderComponent()): Executes the component, returning its rendered result if not within a React environment."
         ],
         "Code": [
           "// Outside React context, this might not show the rendered component",
@@ -638,9 +638,9 @@ export const questionsData = {
         "Question": "What is the purpose of dependency array in useEffect? What is the difference when it is used and when it is not used?",
         "Answer": [
           "The dependency array in `useEffect` controls when the effect should run:",
-          "- **With dependency array:** Effect runs only when values in the array change.",
-          "- **Without dependency array:** Effect runs after every render.",
-          "- **Empty array:** Effect runs only once on mount."
+          "With dependency array: Effect runs only when values in the array change.",
+          "Without dependency array: Effect runs after every render.",
+          "Empty array: Effect runs only once on mount."
         ],
         "Code": [
           "// Runs once on mount",

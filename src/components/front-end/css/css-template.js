@@ -55,7 +55,7 @@ const CSSTemplate = () => {
           </label>
         ))}
       </div>
-      <div className="c-accordion" style={{ marginTop: '20px' }}>
+      <div className="c-accordion" >
         {filteredData.map((item, index) => (
           <details key={index} style={{ marginBottom: '10px', border: '1px solid #ddd', padding: '10px' }}>
             <summary>{item.Question}</summary>

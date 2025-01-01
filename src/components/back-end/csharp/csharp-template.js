@@ -3,7 +3,7 @@ import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { vscDarkPlus } from 'react-syntax-highlighter/dist/esm/styles/prism'; // VS Code dark theme
 import { questionsData } from './data';
 
-const AngularTemplate = () => {
+const CSharpTemplate = () => {
   const { Title, List } = questionsData;
   const [selectedDifficulty, setSelectedDifficulty] = useState([]);
   const [selectedCategory, setSelectedCategory] = useState([]);
@@ -82,4 +82,4 @@ const AngularTemplate = () => {
   );
 };
 
-export default AngularTemplate;
+export default CSharpTemplate;
