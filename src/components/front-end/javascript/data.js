@@ -7,9 +7,9 @@ export const questionsData = {
         "Question": "Explain the Event Loop in JavaScript, including the roles of the Call Stack, Callback Queue, and Microtask Queue.",
         "Answer": [
           "The Event Loop is a mechanism that allows JavaScript to perform non-blocking I/O operations despite being single-threaded. Here's how it works:",
-          "- **Call Stack:** Executes synchronous code, storing function calls in a Last-In-First-Out (LIFO) stack.",
-          "- **Callback Queue (Task Queue):** Holds callbacks from asynchronous operations like setTimeout or DOM events.",
-          "- **Microtask Queue:** Contains microtasks like those created by Promise.then(). Microtasks run before callbacks from the task queue.",
+          "Call Stack: Executes synchronous code, storing function calls in a Last-In-First-Out (LIFO) stack.",
+          "Callback Queue (Task Queue): Holds callbacks from asynchronous operations like setTimeout or DOM events.",
+          "Microtask Queue: Contains microtasks like those created by Promise.then(). Microtasks run before callbacks from the task queue.",
           "The Event Loop continuously checks if the call stack is empty, then processes tasks from the microtask queue first, followed by the callback queue."
         ],
         "Code": [
@@ -109,10 +109,10 @@ export const questionsData = {
         "Category": "Performance Optimization",
         "Question": "How can you optimize JavaScript code for performance, especially in terms of DOM manipulation and loops?",
         "Answer": [
-          "- **DOM Manipulation:** Minimize reflows and repaints by batching changes, using document fragments, or caching DOM references. Use `requestAnimationFrame` for animations.",
-          "- **Loops:** Use for loops over `forEach` for performance in large arrays, avoid unnecessary function calls inside loops, leverage `map`, `filter`, `reduce` for functional operations but be mindful of their performance for very large arrays.",
-          "- **Memoization:** Cache results of expensive function calls.",
-          "- **Debounce and Throttle:** Control how often a function can fire, particularly useful for event handlers."
+          "DOM Manipulation: Minimize reflows and repaints by batching changes, using document fragments, or caching DOM references. Use `requestAnimationFrame` for animations.",
+          "Loops: Use for loops over `forEach` for performance in large arrays, avoid unnecessary function calls inside loops, leverage `map`, `filter`, `reduce` for functional operations but be mindful of their performance for very large arrays.",
+          "Memoization: Cache results of expensive function calls.",
+          "Debounce and Throttle: Control how often a function can fire, particularly useful for event handlers."
         ],
         "Code": [
           "// Example of DOM manipulation optimization",
@@ -130,8 +130,8 @@ export const questionsData = {
         "Category": "ES6+ Features",
         "Question": "Explain how generators and iterables work in JavaScript, and provide an example of each.",
         "Answer": [
-          "- **Generators:** Functions that can be exited and later re-entered, retaining their context (state). They use `function*` syntax and yield values one at a time.",
-          "- **Iterables:** Objects which define a `[Symbol.iterator]` method, allowing them to be used in for-of loops, spread operators, etc."
+          "Generators: Functions that can be exited and later re-entered, retaining their context (state). They use `function*` syntax and yield values one at a time.",
+          "Iterables: Objects which define a `[Symbol.iterator]` method, allowing them to be used in for-of loops, spread operators, etc."
         ],
         "Code": [
           "// Generator example",
@@ -223,13 +223,13 @@ export const questionsData = {
         "Question": "How does JavaScript handle memory management, and what are common memory leak scenarios?",
         "Answer": [
           "JavaScript uses automatic garbage collection, mainly through reference counting and mark-and-sweep algorithms:",
-          "- **Reference Counting:** If no references to an object exist, it's eligible for garbage collection.",
-          "- **Mark-and-Sweep:** Periodically, the garbage collector marks all reachable objects and then sweeps away the unmarked ones.",
+          "Reference Counting: If no references to an object exist, it's eligible for garbage collection.",
+          "Mark-and-Sweep: Periodically, the garbage collector marks all reachable objects and then sweeps away the unmarked ones.",
           "Common memory leak scenarios include:",
-          "- **Unintentional global variables:** Variables accidentally added to the global scope.",
-          "- **Forgotten timers or callbacks:** SetInterval without clearInterval, or event listeners not removed.",
-          "- **Closures holding onto large objects:** If a closure references a large object that isn't needed anymore.",
-          "- **DOM references:** Keeping references to DOM elements after they've been removed from the DOM."
+          "Unintentional global variables: Variables accidentally added to the global scope.",
+          "Forgotten timers or callbacks: SetInterval without clearInterval, or event listeners not removed.",
+          "Closures holding onto large objects: If a closure references a large object that isn't needed anymore.",
+          "DOM references: Keeping references to DOM elements after they've been removed from the DOM."
         ],
         "Code": [
           "// Example of potential memory leak with closures",
@@ -248,8 +248,8 @@ export const questionsData = {
         "Category": "Advanced Objects",
         "Question": "Explain the difference between Object.freeze() and Object.seal() in JavaScript.",
         "Answer": [
-          "- **Object.freeze():** Prevents new properties from being added, existing properties from being removed or modified, and prevents the prototype from being changed. All properties are made non-configurable and non-writable.",
-          "- **Object.seal():** Prevents new properties from being added and existing properties from being removed but allows existing properties to be modified if they're writable. All properties become non-configurable."
+          "Object.freeze(): Prevents new properties from being added, existing properties from being removed or modified, and prevents the prototype from being changed. All properties are made non-configurable and non-writable.",
+          "Object.seal(): Prevents new properties from being added and existing properties from being removed but allows existing properties to be modified if they're writable. All properties become non-configurable."
         ],
         "Code": [
           "// Example usage of Object.freeze and Object.seal",

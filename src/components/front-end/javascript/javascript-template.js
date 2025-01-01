@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { vscDarkPlus } from 'react-syntax-highlighter/dist/esm/styles/prism'; // VS Code dark theme
 import { questionsData } from './data';
@@ -19,7 +19,6 @@ const JavascriptTemplate = () => {
       setFilters([...currentFilters, value]);
     }
   };
-
 
   const filteredData = questionsData["List"].filter(item => (
     (selectedDifficulty.length === 0 || selectedDifficulty.includes(item.Difficulty)) &&
@@ -55,7 +54,7 @@ const JavascriptTemplate = () => {
           </label>
         ))}
       </div>
-      <div className="c-accordion" style={{ marginTop: '20px' }}>
+      <div className="c-accordion" >
         {filteredData.map((item, index) => (
           <details key={index} style={{ marginBottom: '10px', border: '1px solid #ddd', padding: '10px' }}>
             <summary>{item.Question}</summary>
