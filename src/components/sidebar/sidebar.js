@@ -77,7 +77,7 @@ export default function Sidebar() {
           <li className="link-header">BackEnd</li>
           <li onClick={handleToggle}>
             <NavLink to="/csharp-interview-questions-and-answers">
-              C # <span>(5)</span>
+              C # <span>({totalQuestions.csharp})</span>
             </NavLink>
           </li>
           <li onClick={handleToggle}>
@@ -107,8 +107,8 @@ export default function Sidebar() {
           </li>
           <li className="link-header">Cloud</li>
           <li onClick={handleToggle}>
-            <NavLink to="/Azure">
-              Azure <span>(5)</span>
+            <NavLink to="/azure-interview-questions-and-answers">
+              Azure <span>({totalQuestions.azure})</span>
             </NavLink>
           </li>
           <li onClick={handleToggle}>

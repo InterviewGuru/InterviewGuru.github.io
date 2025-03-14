@@ -12,6 +12,7 @@ import ReactNativeTemplate from "./components/front-end/react-native/react-nativ
 import FlutterTemplate from "./components/front-end/flutter/flutter-template";
 import VueJsTemplate from "./components/front-end/vuejs/vuejs-template";
 import CSharpTemplate from "./components/back-end/csharp/csharp-template";
+import AzureTemplate from "./components/cloud/azure/azure";
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
               <Route path="/react-native-interview-questions-and-answers" element={<ReactNativeTemplate />} />
               <Route path="/ionic-interview-questions-and-answers" element={<IonicTemplate />} />
               <Route path="/csharp-interview-questions-and-answers" element={<CSharpTemplate />} />
+              <Route path="/azure-interview-questions-and-answers" element={<AzureTemplate />} />
             </Routes>
           </div>
         </div>

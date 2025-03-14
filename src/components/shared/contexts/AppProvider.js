@@ -9,6 +9,8 @@ import { questionsData as reactNativeData } from '../../front-end/react-native/d
 import { questionsData as ionicData } from '../../front-end/ionic/data';
 import { questionsData as cssData } from '../../front-end/css/data';
 import { questionsData as htmlData } from '../../front-end/html/data';
+import { questionsData as csharpData } from '../../back-end/csharp/data';
+import { questionsData as azureData } from '../../cloud/azure/data';
 
 export const AppContext = createContext();
 
@@ -23,7 +25,8 @@ export const AppProvider = ({ children }) => {
     flutter: flutterData.List.length,
     reactNative: reactNativeData.List.length,
     ionic: ionicData.List.length,
-    csharp: '5',
+    csharp: csharpData.List.length,
+    azure: azureData.List.length,
     node: '5',
     express: '5',
   });
