@@ -336,6 +336,234 @@ export const questionsData ={
           "const { CustomModule } = NativeModules;",
           "CustomModule.customFunction('Hello from Native!');"
         ]
+      },
+      {
+        "Difficulty": "Medium",
+        "Category": "Animations",
+        "Question": "How are animations implemented in React Native?",
+        "Answer": [
+          "Animations in React Native are implemented using the Animated API.",
+          "You can create animations by defining animated values and interpolations."
+        ],
+        "Code": [
+          "// Example of Animation",
+          "import React, { useState } from 'react';",
+          "import { Animated, View, Text, TouchableOpacity } from 'react-native';",
+          "const AnimatedComponent = () => {",
+          "  const [animation] = useState(new Animated.Value(0));",
+          "  const startAnimation = () => {",
+          "    Animated.timing(animation, { toValue: 1, duration: 1000, useNativeDriver: true }).start();",
+          "  };",
+          "  const animatedStyles = { opacity: animation };",
+          "  return (",
+          "    <View>",
+          "      <Animated.View style={[styles.box, animatedStyles]} />",
+          "      <TouchableOpacity onPress={startAnimation}>",
+          "        <Text>Start Animation</Text>",
+          "      </TouchableOpacity>",
+          "    </View>",
+          "  );",
+          "};",
+          "const styles = { box: { width: 100, height: 100, backgroundColor: 'blue' } };",
+          "export default AnimatedComponent;"
+        ]
+      },
+      {
+        "Difficulty": "Medium",
+        "Category": "Testing",
+        "Question": "How do you test React Native applications?",
+        "Answer": [
+          "You can test React Native applications using tools like Jest, React Testing Library, and Detox.",
+          "Jest is used for unit testing, React Testing Library for integration testing, and Detox for end-to-end testing."
+        ]
+      },
+      {
+        "Difficulty": "Medium",
+        "Category": "Deployment",
+        "Question": "How do you deploy a React Native application?",
+        "Answer": [
+          "To deploy a React Native application, you need to build the app for iOS and Android platforms separately.",
+          "For iOS, you can use Xcode to build an IPA file, while for Android, you can generate an APK file using Android Studio."
+        ]
+      },
+      {
+        "Difficulty": "Medium",
+        "Category": "Security",
+        "Question": "How do you handle security in React Native applications?",
+        "Answer": [
+          "To handle security in React Native applications, you can use HTTPS for network requests, secure storage for sensitive data, and avoid storing secrets in the codebase.",
+          "You can also use libraries like react-native-keychain for secure storage."
+        ]
+      },
+      {
+        "Difficulty": "Medium",
+        "Category": "Error Handling",
+        "Question": "How do you handle errors in React Native applications?",
+        "Answer": [
+          "You can handle errors in React Native applications using try-catch blocks, error boundaries, and global error handlers.",
+          "You can also use tools like Sentry or Bugsnag for error monitoring and reporting."
+        ]
+      },
+      {
+        "Difficulty": "Medium",
+        "Category": "Performance",
+        "Question": "How can you optimize the performance of a React Native application?",
+        "Answer": [
+          "Optimization techniques include using FlatList for rendering large lists, memoization with React.memo or useMemo, and avoiding unnecessary re-renders.",
+          "You can also use native modules for performance-critical operations."
+        ]
+      },
+      {
+        "Difficulty": "Medium",
+        "Category": "State Management",
+        "Question": "What are the different state management options in React Native?",
+        "Answer": [
+          "State management options in React Native include using React's useState and useReducer hooks for local state, Context API for global state, and external libraries like Redux or MobX for complex state management."
+        ]
+      },
+      {
+        "Difficulty": "Medium",
+        "Category": "Styling",
+        "Question": "How is styling handled in React Native?",
+        "Answer": [
+          "Styling in React Native is done using JavaScript objects with camelCase properties, similar to CSS.",
+          "You can define styles inline or in a separate StyleSheet object for performance optimization."
+        ]
+      },
+      {
+        "Difficulty": "Medium",
+        "Category": "Navigation",
+        "Question": "How do you implement navigation in React Native?",
+        "Answer": [
+          "Navigation in React Native can be implemented using third-party libraries like React Navigation or native navigation solutions like UINavigationController for iOS and FragmentManager for Android.",
+          "React Navigation provides navigators like Stack, Tab, and Drawer for different navigation patterns."
+        ]
+      },
+      {
+        "Difficulty": "Medium",
+        "Category": "Performance",
+        "Question": "How can you improve the performance of a React Native app?",
+        "Answer": [
+          "Optimization techniques include using FlatList for rendering large lists, memoization with React.memo or useMemo, and avoiding unnecessary re-renders.",
+          "You can also use native modules for performance-critical operations."
+        ]
+      },
+      {
+        "Difficulty": "Medium",
+        "Category": "Native Modules",
+        "Question": "What are Native Modules in React Native?",
+        "Answer": [
+          "Native Modules allow you to write custom native code (Java for Android, Objective-C/Swift for iOS) that can be called from JavaScript.",
+          "This is useful for accessing platform APIs not covered by React Native."
+        ]
+      },
+      {
+        "Difficulty": "Medium",
+        "Category": "Animations",
+        "Question": "How do animations work in React Native?",
+        "Answer": [
+          "React Native provides Animated API for declarative animations, where you define animations in JavaScript, which then translate to native animations for performance.",
+          "You can also use third-party libraries like react-native-reanimated for more complex animations."
+        ]
+      },
+      {
+        "Difficulty": "Medium",
+        "Category": "Testing",
+        "Question": "How do you test React Native applications?",
+        "Answer": [
+          "You can test React Native applications using tools like Jest, React Testing Library, and Detox.",
+          "Jest is used for unit testing, React Testing Library for integration testing, and Detox for end-to-end testing."
+        ]
+      },
+      {
+        "Difficulty": "Medium",
+        "Category": "Deployment",
+        "Question": "How do you deploy a React Native application?",
+        "Answer": [
+          "To deploy a React Native application, you need to build the app for iOS and Android platforms separately.",
+          "For iOS, you can use Xcode to build an IPA file, while for Android, you can generate an APK file using Android Studio."
+        ]
+      },
+      {
+        "Difficulty": "Medium",
+        "Category": "Security",
+        "Question": "How do you handle security in React Native applications?",
+        "Answer": [
+          "To handle security in React Native applications, you can use HTTPS for network requests, secure storage for sensitive data, and avoid storing secrets in the codebase.",
+          "You can also use libraries like react-native-keychain for secure storage."
+        ]
+      },
+      {
+        "Difficulty": "Medium",
+        "Category": "Error Handling",
+        "Question": "How do you handle errors in React Native applications?",
+        "Answer": [
+          "You can handle errors in React Native applications using try-catch blocks, error boundaries, and global error handlers.",
+          "You can also use tools like Sentry or Bugsnag for error monitoring and reporting."
+        ]
+      },
+      {
+        "Difficulty": "Medium",
+        "Category": "Performance",
+        "Question": "How can you optimize the performance of a React Native application?",
+        "Answer": [
+          "Optimization techniques include using FlatList for large lists instead of ScrollView.",
+          "Implementing memoization with React.memo or useMemo.",
+          "Avoiding unnecessary re-renders with PureComponent or shouldComponentUpdate.",
+          "Using native modules for performance-critical operations."
+        ]
+      },
+      {
+        "Difficulty": "Medium",
+        "Category": "State Management",
+        "Question": "What state management options are available in React Native?",
+        "Answer": [
+          "Options include using React's useState and useReducer hooks for local state, Context API for global state, or external libraries like Redux or MobX for complex state management across the app."
+        ]
+      },
+      {
+        "Difficulty": "Medium",
+        "Category": "Styling",
+        "Question": "How is styling handled in React Native?",
+        "Answer": [
+          "React Native uses JavaScript objects to define styles, similar to CSS but with different property names.",
+          "Styles can be defined inline or in a separate StyleSheet object for performance."
+        ]
+      },
+      {
+        "Difficulty": "Medium",
+        "Category": "Navigation",
+        "Question": "How do you implement navigation in React Native?",
+        "Answer": [
+          "Navigation in React Native is often handled by third-party libraries like React Navigation or by using native navigation solutions.",
+          "React Navigation provides navigators like Stack, Tab, and Drawer for different navigation patterns."
+        ]
+      },
+      {
+        "Difficulty": "Medium",
+        "Category": "State Management",
+        "Question": "What state management options are available in React Native?",
+        "Answer": [
+          "Options include using React's useState and useReducer hooks for local state, Context API for global state, or external libraries like Redux or MobX for complex state management across the app."
+        ]
+      },
+      {
+        "Difficulty": "Medium",
+        "Category": "Styling",
+        "Question": "How is styling handled in React Native?",
+        "Answer": [
+          "React Native uses JavaScript objects to define styles, similar to CSS but with different property names.",
+          "Styles can be defined inline or in a separate StyleSheet object for performance."
+        ]
+      },
+      {
+        "Difficulty": "Medium",
+        "Category": "Navigation",
+        "Question": "How do you implement navigation in React Native?",
+        "Answer": [
+          "Navigation in React Native is often handled by third-party libraries like React Navigation or by using native navigation solutions.",
+          "React Navigation provides navigators like Stack, Tab, and Drawer for different navigation patterns."
+        ]
       }
     ]
   }

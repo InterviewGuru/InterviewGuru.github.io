@@ -681,7 +681,306 @@ export const questionsData = {
           "  return () => subscription.unsubscribe();",
           "}, []);"
         ]
-      }    
+      },
+      {
+        "Difficulty": "Medium",
+        "Category": "Hooks",
+        "Question": "What is the difference between useMemo and useCallback?",
+        "Answer": [
+          "useMemo memoizes the result of a function, re-computing only when its dependencies change.",
+          "useCallback memoizes the function itself, useful for preventing unnecessary re-renders in child components."
+        ],
+        "Code": [
+          "// Example of useMemo",
+          "const memoizedValue = useMemo(() => computeExpensiveValue(a, b), [a, b]);",
+          "// Example of useCallback",
+          "const memoizedCallback = useCallback(() => { doSomething(a, b); }, [a, b]);"
+        ]
+      },
+      {
+        "Difficulty": "Medium",
+        "Category": "Hooks",
+        "Question": "What is the difference between useState and useReducer?",
+        "Answer": [
+          "useState is simpler and used for local component state.",
+          "useReducer is more powerful and used for complex state logic, especially when the next state depends on the previous one."
+        ],
+        "Code": [
+          "// Example of useState",
+          "const [count, setCount] = useState(0);",
+          "// Example of useReducer",
+          "const [state, dispatch] = useReducer(reducer, initialState);"
+        ]
+      },
+      {
+        "Difficulty": "Medium",
+        "Category": "Hooks",
+        "Question": "What is the purpose of useRef?",
+        "Answer": [
+          "useRef returns a mutable ref object whose .current property is initialized to the passed argument.",
+          "It persists for the full lifetime of the component and does not cause re-renders when its value changes."
+        ],
+        "Code": [
+          "// Example of useRef",
+          "const inputRef = useRef();",
+          "<input ref={inputRef} />;"
+        ]
+      },
+      {
+        "Difficulty": "Medium",
+        "Category": "Hooks",
+        "Question": "What is the difference between useLayoutEffect and useEffect?",
+        "Answer": [
+          "useEffect runs after the browser has painted, asynchronously.",
+          "useLayoutEffect runs synchronously after all DOM mutations but before the browser paints."
+        ],
+        "Code": [
+          "// Example of useLayoutEffect",
+          "useLayoutEffect(() => {",
+          "  // DOM mutations",
+          "}, []);"
+        ]
+      },
+      {
+        "Difficulty": "Medium",
+        "Category": "Hooks",
+        "Question": "What is the difference between useContext and useReducer?",
+        "Answer": [
+          "useContext is used to consume a context value from the nearest Provider ancestor.",
+          "useReducer is used for more complex state logic, similar to how reducers work in Redux."
+        ],
+        "Code": [
+          "// Example of useContext",
+          "const value = useContext(MyContext);",
+          "// Example of useReducer",
+          "const [state, dispatch] = useReducer(reducer, initialState);"
+        ]
+      },
+      {
+        "Difficulty": "Medium",
+        "Category": "Hooks",
+        "Question": "What is the difference between useImperativeHandle and useLayoutEffect?",
+        "Answer": [
+          "useImperativeHandle is used to customize the instance value that is exposed to parent components when using ref.",
+          "useLayoutEffect is used to perform side effects synchronously after DOM mutations."
+        ],
+        "Code": [
+          "// Example of useImperativeHandle",
+          "useImperativeHandle(ref, () => ({ method }), [deps]);",
+          "// Example of useLayoutEffect",
+          "useLayoutEffect(() => { /* DOM mutations */ }, [deps]);"
+        ]
+      },
+      {
+        "Difficulty": "Medium",
+        "Category": "Hooks",
+        "Question": "What is the difference between useDebugValue and useEffect?",
+        "Answer": [
+          "useDebugValue is used to display a label for custom hooks in React DevTools.",
+          "useEffect is used to perform side effects in function components."
+        ],
+        "Code": [
+          "// Example of useDebugValue",
+          "useDebugValue(value);",
+          "// Example of useEffect",
+          "useEffect(() => { /* side effect */ }, [deps]);"
+        ]
+      },
+      {
+        "Difficulty": "Medium",
+        "Category": "Hooks",
+        "Question": "What is the difference between useReducer and useContext?",
+        "Answer": [
+          "useReducer is used for managing more complex state logic in a component.",
+          "useContext is used to consume a context value from the nearest Provider ancestor."
+        ],
+        "Code": [
+          "// Example of useReducer",
+          "const [state, dispatch] = useReducer(reducer, initialState);",
+          "// Example of useContext",
+          "const value = useContext(MyContext);"
+        ]
+      },
+      {
+        "Difficulty": "Medium",
+        "Category": "Hooks",
+        "Question": "What is the difference between useReducer and useRef?",
+        "Answer": [
+          "useReducer is used for managing more complex state logic in a component.",
+          "useRef is used to persist mutable values across renders without causing re-renders."
+        ],
+        "Code": [
+          "// Example of useReducer",
+          "const [state, dispatch] = useReducer(reducer, initialState);",
+          "// Example of useRef",
+          "const inputRef = useRef();"
+        ]
+      },
+      {
+        "Difficulty": "Medium",
+        "Category": "Hooks",
+        "Question": "What is the difference between useMemo and useReducer?",
+        "Answer": [
+          "useMemo memoizes the result of a function, re-computing only when its dependencies change.",
+          "useReducer is used for managing more complex state logic in a component."
+        ],
+        "Code": [
+          "// Example of useMemo",
+          "const memoizedValue = useMemo(() => computeExpensiveValue(a, b), [a, b]);",
+          "// Example of useReducer",
+          "const [state, dispatch] = useReducer(reducer, initialState);"
+        ]
+      },
+      {
+        "Difficulty": "Medium",
+        "Category": "Hooks",
+        "Question": "What is the difference between useMemo and useContext?",
+        "Answer": [
+          "useMemo memoizes the result of a function, re-computing only when its dependencies change.",
+          "useContext is used to consume a context value from the nearest Provider ancestor."
+        ],
+        "Code": [
+          "// Example of useMemo",
+          "const memoizedValue = useMemo(() => computeExpensiveValue(a, b), [a, b]);",
+          "// Example of useContext",
+          "const value = useContext(MyContext);"
+        ]
+      },
+      {
+        "Difficulty": "Medium",
+        "Category": "Hooks",
+        "Question": "What is the difference between useMemo and useRef?",
+        "Answer": [
+          "useMemo memoizes the result of a function, re-computing only when its dependencies change.",
+          "useRef is used to persist mutable values across renders without causing re-renders."
+        ],
+        "Code": [
+          "// Example of useMemo",
+          "const memoizedValue = useMemo(() => computeExpensiveValue(a, b), [a, b]);",
+          "// Example of useRef",
+          "const inputRef = useRef();"
+        ]
+      },
+      {
+        "Difficulty": "Medium",
+        "Category": "Hooks",
+        "Question": "What is the difference between useMemo and useDebugValue?",
+        "Answer": [
+          "useMemo memoizes the result of a function, re-computing only when its dependencies change.",
+          "useDebugValue is used to display a label for custom hooks in React DevTools."
+        ],
+        "Code": [
+          "// Example of useMemo",
+          "const memoizedValue = useMemo(() => computeExpensiveValue(a, b), [a, b]);",
+          "// Example of useDebugValue",
+          "useDebugValue(value);"
+        ]
+      },
+      {
+        "Difficulty": "Medium",
+        "Category": "Hooks",
+        "Question": "What is the difference between useMemo and useLayoutEffect?",
+        "Answer": [
+          "useMemo memoizes the result of a function, re-computing only when its dependencies change.",
+          "useLayoutEffect is used to perform side effects synchronously after DOM mutations."
+        ],
+        "Code": [
+          "// Example of useMemo",
+          "const memoizedValue = useMemo(() => computeExpensiveValue(a, b), [a, b]);",
+          "// Example of useLayoutEffect",
+          "useLayoutEffect(() => { /* DOM mutations */ }, [deps]);"
+        ]
+      },
+      {
+        "Difficulty": "Medium",
+        "Category": "Hooks",
+        "Question": "What is the difference between useMemo and useEffect?",
+        "Answer": [
+          "useMemo memoizes the result of a function, re-computing only when its dependencies change.",
+          "useEffect is used to perform side effects in function components."
+        ],
+        "Code": [
+          "// Example of useMemo",
+          "const memoizedValue = useMemo(() => computeExpensiveValue(a, b), [a, b]);",
+          "// Example of useEffect",
+          "useEffect(() => { /* side effect */ }, [deps]);"
+        ]
+      },
+      {
+        "Difficulty": "Medium",
+        "Category": "Hooks",
+        "Question": "What is the difference between useMemo and useImperativeHandle?",
+        "Answer": [
+          "useMemo memoizes the result of a function, re-computing only when its dependencies change.",
+          "useImperativeHandle is used to customize the instance value that is exposed to parent components when using ref."
+        ],
+        "Code": [
+          "// Example of useMemo",
+          "const memoizedValue = useMemo(() => computeExpensiveValue(a, b), [a, b]);",
+          "// Example of useImperativeHandle",
+          "useImperativeHandle(ref, () => ({ method }), [deps]);"
+        ]
+      },
+      {
+        "Difficulty": "Medium",
+        "Category": "Hooks",
+        "Question": "What is the difference between useMemo and useDebugValue?",
+        "Answer": [
+          "useMemo memoizes the result of a function, re-computing only when its dependencies change.",
+          "useDebugValue is used to display a label for custom hooks in React DevTools."
+        ],
+        "Code": [
+          "// Example of useMemo",
+          "const memoizedValue = useMemo(() => computeExpensiveValue(a, b), [a, b]);",
+          "// Example of useDebugValue",
+          "useDebugValue(value);"
+        ]
+      },
+      {
+        "Difficulty": "Medium",
+        "Category": "Hooks",
+        "Question": "What is the difference between useMemo and useReducer?",
+        "Answer": [
+          "useMemo memoizes the result of a function, re-computing only when its dependencies change.",
+          "useReducer is used for managing more complex state logic in a component."
+        ],
+        "Code": [
+          "// Example of useMemo",
+          "const memoizedValue = useMemo(() => computeExpensiveValue(a, b), [a, b]);",
+          "// Example of useReducer",
+          "const [state, dispatch] = useReducer(reducer, initialState);"
+        ]
+      },
+      {
+        "Difficulty": "Medium",
+        "Category": "Hooks",
+        "Question": "What is the difference between useMemo and useContext?",
+        "Answer": [
+          "useMemo memoizes the result of a function, re-computing only when its dependencies change.",
+          "useContext is used to consume a context value from the nearest Provider ancestor."
+        ],
+        "Code": [
+          "// Example of useMemo",
+          "const memoizedValue = useMemo(() => computeExpensiveValue(a, b), [a, b]);",
+          "// Example of useContext",
+          "const value = useContext(MyContext);"
+        ]
+      },
+      {
+        "Difficulty": "Medium",
+        "Category": "Hooks",
+        "Question": "What is the difference between useMemo and useRef?",
+        "Answer": [
+          "useMemo memoizes the result of a function, re-computing only when its dependencies change.",
+          "useRef is used to persist mutable values across renders without causing re-renders."
+        ],
+        "Code": [
+          "// Example of useMemo",
+          "const memoizedValue = useMemo(() => computeExpensiveValue(a, b), [a, b]);",
+          "// Example of useRef",
+          "const inputRef = useRef();"
+        ]
+      },    
     ]
   }
-  
+

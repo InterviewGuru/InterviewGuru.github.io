@@ -607,6 +607,70 @@ export const questionsData = {
           "  @Input() title: string;",
           "}"
         ]
+      },
+      {
+        "Difficulty": "Medium",
+        "Category": "Services",
+        "Question": "What are Services in Angular?",
+        "Answer": [
+          "Services in Angular are classes that are responsible for fetching, processing, and sharing data across components.",
+          "They help keep components lean and focused on their primary tasks."
+        ],
+        "Code": [
+          "// Example of a Service",
+          "import { Injectable } from '@angular/core';",
+          "@Injectable({ providedIn: 'root' })",
+          "export class DataService {",
+          "  getData() { return 'Some data'; }",
+          "}"
+        ]
+      },
+      {
+        "Difficulty": "Medium",
+        "Category": "Forms",
+        "Question": "What are Template-Driven Forms in Angular?",
+        "Answer": [
+          "Template-Driven Forms in Angular are forms that are built using directives in the template.",
+          "They are suitable for simple forms and are easy to set up."
+        ],
+        "Code": [
+          "// Example of a Template-Driven Form",
+          "<form #myForm='ngForm'>",
+          "  <input name='name' ngModel>",
+          "</form>"
+        ]
+      },
+      {
+        "Difficulty": "Medium",
+        "Category": "Forms",
+        "Question": "What are Reactive Forms in Angular?",
+        "Answer": [
+          "Reactive Forms in Angular are forms that are built programmatically in the component class.",
+          "They provide more control and flexibility, making them suitable for complex forms."
+        ],
+        "Code": [
+          "// Example of a Reactive Form",
+          "import { FormBuilder, FormGroup, Validators } from '@angular/forms';",
+          "export class ReactiveFormComponent {",
+          "  profileForm = this.fb.group({",
+          "    name: ['', Validators.required]",
+          "  });",
+          "  constructor(private fb: FormBuilder) { }",
+          "}"
+        ]
+      },
+      {
+        "Difficulty": "Medium",
+        "Category": "Pipes",
+        "Question": "What are Pipes in Angular?",
+        "Answer": [
+          "Pipes in Angular are used to transform data in the template.",
+          "They are similar to filters in AngularJS and can be used to format data for display."
+        ],
+        "Code": [
+          "// Example of using a Pipe",
+          "<p>{{ today | date:'fullDate' }}</p>"
+        ]
       }
     ]
   }

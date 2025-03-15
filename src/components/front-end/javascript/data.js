@@ -371,7 +371,134 @@ export const questionsData = {
           "const boundFn = printValue.bind(obj);",
           "boundFn(5);"
         ]
-      }
+      },
+      {
+        "Difficulty": "Medium",
+        "Category": "DOM Manipulation",
+        "Question": "What is event delegation in JavaScript?",
+        "Answer": [
+          "Event delegation is a technique where a single event listener is attached to a parent element to listen for events that happen inside its children.",
+          "This is useful for elements added dynamically or when handling events for a large number of child elements."   
+        ]
+      },
+      {
+        "Difficulty": "Medium",
+        "Category": "Error Handling",
+        "Question": "What is the purpose of try, catch, and finally blocks in JavaScript?",
+        "Answer": [
+          "'try' block contains code that might throw an exception.",
+          "'catch' block handles exceptions thrown in the 'try' block.",
+          "'finally' block contains code that will be executed regardless of whether an exception is thrown."
+        ]
+      },
+      {
+        "Difficulty": "Easy",
+        "Category": "Loops",
+        "Question": "What are the different types of loops in JavaScript?",
+        "Answer": [
+          "For loop: Executes a block of code a specified number of times.",
+          "While loop: Executes a block of code as long as the condition is true.",
+          "Do-while loop: Similar to a while loop, but the code is executed at least once before the condition is tested.",
+          "For-in loop: Iterates over the properties of an object.",
+          "For-of loop: Iterates over the values of an iterable object like arrays or strings."
+        ]
+      },
+      {
+        "Difficulty": "Easy",
+        "Category": "Scope",
+        "Question": "What is the scope in JavaScript?",
+        "Answer": [
+          "Scope determines the visibility and lifetime of variables and parameters in a particular context.",
+          "Global scope: Variables declared outside any function are in the global scope and can be accessed from anywhere.",
+          "Local scope: Variables declared within a function are in the local scope and can only be accessed within that function."
+        ]
+      },
+      {
+        "Difficulty": "Easy",
+        "Category": "Type Conversion",
+        "Question": "What is type coercion in JavaScript?",
+        "Answer": [
+          "Type coercion is the automatic or implicit conversion of values from one data type to another.",
+          "It can be 'implicit' (done by JavaScript) or 'explicit' (done by the programmer)."
+        ]
+      },
+      {
+        "Difficulty": "Easy",
+        "Category": "Operators",
+        "Question": "What are the different types of operators in JavaScript?",
+        "Answer": [
+          "Arithmetic operators: +, -, *, /, %, **",
+          "Assignment operators: =, +=, -=, *=, /=, %=",
+          "Comparison operators: ==, ===, !=, !==, >, <, >=, <=",
+          "Logical operators: &&, ||, !",
+          "Bitwise operators: &, |, ^, ~, <<, >>, >>>",
+          "Unary operators: +, -, ++, --, typeof, delete",
+          "Ternary operator (conditional operator): condition ? expr1 : expr2"
+        ]
+      },
+      {
+        "Difficulty": "Easy",
+        "Category": "Events",
+        "Question": "What are events in JavaScript?",
+        "Answer": [
+          "Events are actions or occurrences that happen in the system or in the DOM, triggered by user interactions or by the system.",
+          "Examples include click, keypress, load, mouseover, etc."
+        ]
+      },
+      {
+        "Difficulty": "Easy",
+        "Category": "Cookies and Local Storage",
+        "Question": "What are cookies and local storage in JavaScript?",
+        "Answer": [
+          "Cookies: Small pieces of data stored in the user's browser, sent with each request to a server.",
+          "Local Storage: A type of web storage that allows data to be stored locally in the user's browser."
+        ]
+      },
+      {
+        "Difficulty": "Easy",
+        "Category": "Regular Expressions",
+        "Question": "What are regular expressions in JavaScript?",
+        "Answer": [
+          "Regular expressions are patterns used to match character combinations in strings.",
+          "They can be used for pattern matching, searching, replacing, and extracting information from text."
+        ]
+      },
+      {
+        "Difficulty": "Easy",
+        "Category": "JSON",
+        "Question": "What is JSON, and how is it used in JavaScript?",
+        "Answer": [
+          "JSON (JavaScript Object Notation) is a lightweight data interchange format that is easy for humans to read and write and easy for machines to parse and generate.",
+          "It is often used to send data between a server and a web page."
+        ]
+      },
+      {
+        "Difficulty": "Easy",
+        "Category": "Promises",
+        "Question": "What are promises in JavaScript?",
+        "Answer": [
+          "Promises are objects representing the eventual completion or failure of an asynchronous operation.",
+          "They are used to handle asynchronous operations and provide a more readable and manageable way to deal with callbacks."
+        ]
+      },
+      {
+        "Difficulty": "Easy",
+        "Category": "Arrow Functions",
+        "Question": "What are arrow functions in JavaScript?",
+        "Answer": [
+          "Arrow functions are a more concise way to write function expressions in JavaScript.",
+          "They have a more compact syntax compared to traditional function expressions and do not bind their own 'this', 'arguments', 'super', or 'new.target'."
+        ]
+      },
+      {
+        "Difficulty": "Easy",
+        "Category": "Classes",
+        "Question": "What are classes in JavaScript?",
+        "Answer": [
+          "Classes are a type of function that can be defined using class expressions or class declarations.",
+          "They provide a more simple and clear syntax for creating objects and dealing with inheritance."
+        ]
+      },
     ]
   }
   
