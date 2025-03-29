@@ -142,6 +142,14 @@ body {
                 text-transform: uppercase;
                 color: #ffffff;
                 font-size: 13px;
+                cursor: pointer;
+                border-bottom: 2px solid #ccc;
+
+                &:hover {
+                    box-shadow: 0px 0px 5px #ccc;
+                    color: #fff;
+                    text-shadow: #bb06ee 0px 0px 2px;
+                }
 
             }
 

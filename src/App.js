@@ -13,11 +13,21 @@ import FlutterTemplate from "./components/front-end/flutter/flutter-template";
 import VueJsTemplate from "./components/front-end/vuejs/vuejs-template";
 import CSharpTemplate from "./components/back-end/csharp/csharp-template";
 import AzureTemplate from "./components/cloud/azure/azure";
+import URLShortenerDesign from "./components/system-design/url-shorting-system-design";
+import DistributedFileStorageDesign from "./components/system-design/distributed-file-storage-design";
+import ECommercePlatformDesign from "./components/system-design/e-commerce-platform-design";
+import RealTimeChatDesign from "./components/system-design/real-time-chat-application-system-design";
+import VideoStreamingDesign from "./components/system-design/video-streaming-service-design";
+import SocialMediaFeedDesign from "./components/system-design/social-media-feed-system-design";
+import HorizontalMenu from "./components/sidebar/HorizontalMenu";
 
 function App() {
   return (
     <HashRouter>
       <div className="container-fluid">
+        {/* <div className="row header">
+            <HorizontalMenu></HorizontalMenu>
+        </div> */}
         <div className="row main">
           <div className="col-2 sidebar-wrapper">
             <Sidebar></Sidebar>
@@ -36,6 +46,13 @@ function App() {
               <Route path="/ionic-interview-questions-and-answers" element={<IonicTemplate />} />
               <Route path="/csharp-interview-questions-and-answers" element={<CSharpTemplate />} />
               <Route path="/azure-interview-questions-and-answers" element={<AzureTemplate />} />
+
+              <Route path="/url-shortening-system-design" element={<URLShortenerDesign />} />
+              <Route path="/Distributed-File-Storage-System-Design" element={<DistributedFileStorageDesign />} />
+              <Route path="/e-commerce-platform-design" element={<ECommercePlatformDesign />} />
+              <Route path="/real-time-chat-application-system-design" element={<RealTimeChatDesign />} />
+              <Route path="/video-streaming-service-design" element={<VideoStreamingDesign />} />
+              <Route path="/social-media-feed-system-design" element={<SocialMediaFeedDesign />} />
             </Routes>
           </div>
         </div>
